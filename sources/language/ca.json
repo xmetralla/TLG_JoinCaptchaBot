@@ -6,7 +6,7 @@
         "Ajuda sobre el bot:\n————————————————\n- Sóc un bot que envia un captcha a cada usuari nou que s'uneix al grup, i expulso (kick) als que no resolen el captcha en un temps determinat.\n\n- Si un usuari ha intentat unir-se al grup 5 vegades i mai no ha resolt el captcha, suposaré que aquell \"usuari\" és un bot i el bandejaré (ban).\n\n- Qualsevol missatge que contingui un URL i hagi estat enviat per un \"usuari\" nou abans que aquest hagi resolt el captcha, serà considerat un missatge brossa (SPAM) i l'esborraré.\n\n- Heu de donar-me permisos d'administració per a expulsar usuaris i eliminar missatges.\n\n- Per tal de mantenir net el grup, elimino aquells missatges que tinguin relació amb mi quan no s'hagi resolt el captcha i l'usuari hagi estat expulsat (kick) (transcorreguts 5 minuts).\n\n- El temps del que disposen els usuaris per a resoldre el captcha són 5 minuts, però es pot canviar mitjançant l'ordre /time.\n\n- Podeu activar o desactivar la protecció captcha mitjançant les ordres /enable i /disable.\n\n- Les ordres de configuració només les poden utilitzar els administradors del grup.\n\n- Podeu canviar l'idioma en el que parlo mitjançant l'ordre /language.\n\n- Podeu configurar el nivell de dificultat del captcha mitjançant l'ordre /difficulty.\n\n- Podeu establir que els captcha només continguin números (per defecte), o números i lletres, or a math equation to be solved, or a custom poll, or just a button, a través de l'ordre /captcha_mode.\n\n- Podeu configurar un missatge de benvinguda personalitzat amb ordre /welcome_msg.\n\n- You can enable an option to let me apply restriction to new joined users to send non-text messages using command /restrict_non_text.\n\n- If the Bot is Private, allow groups with command /allowgroup.\n\n- You can configure a group from private Bot chat through /connect command.\n\n- You can block users to send any message that contains an URL/link in a group by /url_disable command.\n\n- Doneu un cop d'ull a l'ordre /commands per a veure un llistat amb totes les ordres disponibles i una breu descripció de cadascuna.",
 
     "COMMANDS":
-        "Llistat d'ordres:\n————————————————\n/start - Mostra la informació inicial sobre el bot.\n\n/help - Mostra la informació d'ajuda.\n\n/commands - Mostra el missatge actual: informació sobre totes les ordres disponibles i la seva descripció.\n\n/language - Permet canviar l'idioma en que parla el bot.\n\n/time - Permet canviar el temps disponible per a resoldre un captcha.\n\n/difficulty - Permet canviar el nivell de dificultat del captcha (d'1 a 5).\n\n/captcha_mode - Permet canviar el mode-caràcter del captcha (nums: només números, hex: números i lletres A-F, ascii: números i lletres A-Z, math: math equation, poll: custom and configurable poll, button: just a button).\n\n/captcha_poll - Configure custom poll question and options for captcha in poll mode.\n\n/welcome_msg - Permet configurar un missatge de benvinguda que s’envia després de resoldre el captcha.\n\n/welcome_msg_time - Allows to configure the time of automatic removal of the welcome message.\n\n/restrict_non_text - After a new user solves the captha, apply a restriction to don't let them send non-text messages (images, videos, audios) for 1 day (or forever, using \"forever\" keyword).\n\n/add_ignore - Do not ask an ignored user the captcha.\n\n/remove_ignore - Stop ignoring an user.\n\n/ignore_list - list of ignored users' IDs.\n\n/remove_solve_kick_msg - Configure if captcha solve and kick/ban messages should be automatically deleted after a while.\n\n/remove_welcome_msg - Configure if welcome message should be automatically deleted after a while.\n\n/url_disable - Deny members of the group to send messages that contains links to websites (URLs).\n\n/url_enable - Allows members of the group to send messages that contains links to websites (URLs).\n\n/remove_all_msg_kick_off - Configure the Bot to don't remove text messages sent by users that didn't solve the captcha.\n\n/remove_all_msg_kick_on - Configure the Bot to remove all messages sent by users that didn't solve the captcha.\n\n/allowgroup - Allow a group to use the Bot (if Bot is Private).\n\n/enable - Activa la protecció per captcha en el grup.\n\n/disable - Desactiva la protecció per captcha en el grup.\n\n/checkcfg - Get current group captcha configurations.\n\n/chatid - Shows Chat ID of current chat.\n\n/connect - Connect to a group to configure it from private Bot chat.\n\n/disconnect - Disconnect from connected group that is being configured from private Bot chat.\n\n/version - Consulta la versió del bot.\n\n/about - Mostra la informació \"Quant a...\" del bot.",
+        "Llistat d'ordres:\n————————————————\n/start - Mostra la informació inicial sobre el bot.\n\n/help - Mostra la informació d'ajuda.\n\n/commands - Mostra el missatge actual: informació sobre totes les ordres disponibles i la seva descripció.\n\n/language - Permet canviar l'idioma en que parla el bot.\n\n/time - Permet canviar el temps disponible per a resoldre un captcha.\n\n/difficulty - Permet canviar el nivell de dificultat del captcha (d'1 a 5).\n\n/captcha_mode - Permet canviar el mode-caràcter del captcha (nums: només números, hex: números i lletres A-F, ascii: números i lletres A-Z, math: operació matemàtica, poll: enquesta personalitzada configurable, button: només un botó).\n\n/captcha_poll - Configura una enquesta personalitzada i les seves opcions quan el captcha està en mode enquesta.\n\n/welcome_msg - Permet configurar un missatge de benvinguda que s’envia després de resoldre el captcha.\n\n/welcome_msg_time - Permet configurar el temps que tarda en desaparèixer el missatge de benvinguda.\n\n/restrict_non_text - Quan un usuari nou resol el captcha, aplica una restricció d'enviament de missatges de mèdia (imatges, videos, àudios) per 1 dia (o sempre, utilitzant la paraula \"forever\" ).\n\n/add_ignore - No planteja el captcha a un usuari ignorat.\n\n/remove_ignore - Treu un usuari de la llista d'ignorats.\n\n/ignore_list - llista d'usuaris ignorats' IDs.\n\n/remove_solve_kick_msg - Configura si els missatges de captcha resolt o d'expulsió han de ser eliminats després d'un temps.\n\n/remove_welcome_msg - Configura si el missatge de benvinguda s'ha d'eliminar passat un temps.\n\n/url_disable - No permet als usuaris del grup enviar missatges que continguin enllaços web (URLs).\n\n/url_enable - Permet als usuaris del grup enviar missatges que continguin enllaços a webs (URLs).\n\n/remove_all_msg_kick_off - Configura el Bot perquè no elimini els missatges de text dels usuaris que no han resolt el captcha.\n\n/remove_all_msg_kick_on - Configura el Bot perquè elimini tots els missatges enviats per usuaris que no han resolt el captcha.\n\n/allowgroup - Permet als usuaris del grup utilitzar el Bot (si el Bot és privat).\n\n/enable - Activa la protecció per captcha al grup.\n\n/disable - Desactiva la protecció per captcha al grup.\n\n/checkcfg - Mostra la configuració de captcha del grup actual.\n\n/chatid - Mostra el Chat ID del xat axtual.\n\n/connect - Connecta el bot a un grup per configurar-lo des del xat en privat amb el Bot.\n\n/disconnect - Desconnecta el Bot d'un grup que s'està configurant des d'un xat privat amb el Bot.\n\n/version - Consulta la versió del bot.\n\n/about - Mostra la informació \"Quant a...\" del bot.",
 
     "CMD_NOT_ALLOW":
         "Aquesta ordre només la pot utilitar un administrador.",
@@ -27,10 +27,10 @@
         "S'ha canviat el temps per a resoldre el captcha a {}.",
 
     "WELCOME_TIME_CHANGE":
-        "Time to delete welcome message successfully changed to {}.",
+        "Temps per eliminar el missatge de bevinguda canviat a {}.",
 
     "TIME_OUT_RANGE":
-        "Invalid time, it needs to be in range 10 sec to {} min.",
+        "Temps no vàlid, ha de ser en un rang de 10 segons a {} min.",
 
     "TIME_NOT_NUM":
         "El temps introduït no és un número enter.",
@@ -39,7 +39,7 @@
         "Cal que especifiqueu un valor de temps.\n\nExemples:\n/time 30 sec\n/time 5 min\n/time 1 min",
 
     "WELCOME_TIME_NOT_ARG":
-        "The command needs a time value to set.\n\nExamples:\n/welcome_msg_time 30 sec\n/welcome_msg_time 5 min\n/welcome_msg_time 1 min",
+        "Aquesta ordre necessita un valor de temps per ser configurada.\n\nExemples:\n/welcome_msg_time 30 sec\n/welcome_msg_time 5 min\n/welcome_msg_time 1 min",
 
     "DIFFICULTY_CHANGE":
         "S'ha canviat el nivell de dificultat dels captcha a {}.",
@@ -57,7 +57,7 @@
         "Mode-caràcter no vàlid. Els modes disponibles són: \"nums\", \"hex\", \"ascii\", \"math\", \"button\", \"poll\" i \"random\".\n\nExemples:\n/captcha_mode nums\n/captcha_mode hex\n/captcha_mode ascii\n/captcha_mode math\n/captcha_mode button\n/captcha_mode poll\n/captcha_mode random",
 
     "CAPTCHA_MODE_NOT_ARG":
-        "Cal que especifiqueu un mode-caràcter. Els modes disponibles són:\n- Captcha numèrics (\"nums\").\n- Captcha hexadecimals, amb números i lletres A-F (\"hex\").\n- Captcha amb números i lletres A-Z (\"ascii\").\n- Math equation to be solved Captchas (\"math\").\n- Button-only challenge (\"button\").\n- Custom Poll challenge (\"poll\").\n- Random challenge (\"random\").\n\nExemples:\n/captcha_mode nums\n/captcha_mode hex\n/captcha_mode ascii\n/captcha_mode math\n/captcha_mode button\n/captcha_mode poll\n/captcha_mode random",
+        "Cal que especifiqueu un mode-caràcter. Els modes disponibles són:\n- Captcha numèrics (\"nums\").\n- Captcha hexadecimals, amb números i lletres A-F (\"hex\").\n- Captcha amb números i lletres A-Z (\"ascii\").\n- Operació matemàtica (\"math\").\n- Repte de prémer un botó (\"button\").\n- Enquesta personalitzada (\"poll\").\n- Repte aleatori (\"random\").\n\nExemples:\n/captcha_mode nums\n/captcha_mode hex\n/captcha_mode ascii\n/captcha_mode math\n/captcha_mode button\n/captcha_mode poll\n/captcha_mode random",
 
     "WELCOME_MSG_SET":
         "El missatge de benvinguda s'ha configurat correctament.",
@@ -66,7 +66,7 @@
         "Missatge de benvinguda desactivat.",
 
     "WELCOME_MSG_SET_NOT_ARG":
-        "Escriviu el missatge de benvinguda després de l'ordre.\n\nExemple:\n/welcome_msg Hola $user, benvingut al grup i recordeu ser respectuosos amb els altres usuaris.\n\nDesactiva el missatge:\n/welcome_msg disable",
+        "Escriviu el missatge de benvinguda després de l'ordre.\n\nExemple:\n/welcome_msg Hola $user, benvingut al grup i recorda ser respectuós amb els altres usuaris.\n\nDesactiva el missatge:\n/welcome_msg disable",
 
     "RESTRICT_NON_TEXT_MSG_ENABLED":
         "Restriction to send non-text messages for new users enabled. I'm gonna remove new joined users permissions except text messages send.\n\n[This text needs translate to actual configured language]",
@@ -123,10 +123,10 @@
         "Aquest codi no és correcte. Fixeu-vos-hi bé, el captcha té 4 caràcters...",
 
     "CAPTCHA_INCORRECT_MATH":
-        "That is not the correct number. Check closely, you need to solve the math equation...",
+        "Aquest resultat no és correcte. Comproveu-ho, heu de resoldre la operació matemàtica...",
 
     "NEW_USER_KICK":
-        "{} no aconsegueixen resoldre el captcha. L'\"usuari\" ha estat expulsat.",
+        "{} no ha aconseguit resoldre el captcha. L'\"usuari\" ha estat expulsat.",
 
     "NEW_USER_KICK_NOT_RIGHTS":
         "L'\"usuari\" {} hauria de ser expulsat, però no se m'han donat els permisos d'administració necessaris per a expulsar usuaris del grup.",
@@ -141,10 +141,10 @@
         "He intentat esborrar aquest missatge, però no se m'han donat els permisos d'administració necessaris per tal d'eliminar els missatges que no són meus.",
 
     "NEW_USER_BAN":
-        "Warning: User {} fail to solve the captcha {} times. \"User\" was banned. To let him/her enter again, an Admin has to manually remove the restrictions of this \"user\" from group settings.",
+        "Atenció: L'usuari {} s'ha equivocat en la resposta {} vegades. \"User\" ha estat bandejat. Per permetre-li entrar una altra vegada, un administrador ha de retirar l'usuari \"user\" de la llista de bandejats a les opcions del grup.",
 
     "NEW_USER_BAN_NOT_IN_CHAT":
-        "Warning: User {} fail to solve the captcha {} times. I tried to ban the \"User\", but the user is not in the group any more (has left the group or has been kicked out/banned by an Admin).",
+        "Atenció: L'usuari {} s'ha equivocat en la resposta {} vegades. He intentat bandejar l'usuari \"User\", però ja no és al grup (ha marxat del grup o algun administrador l'ha expulsat).",
 
     "NEW_USER_BAN_NOT_RIGHTS":
         "Warning: User {} fail to solve the captcha {} times. I tried to ban the \"User\", but I don't have administration rights to ban users in the group.",
@@ -162,22 +162,22 @@
         "He eliminat un missatge que no és de text (imatge, àudio, fitxer...) enviat per {}, per tal de mantenir el grup net de brossa.\n\nPodreu enviar missatges que no siguin de text un cop hàgiu resolt el captcha.",
 
     "RM_SOLVE_KICK_MSG":
-        "Configure if solve and kick/ban messages should be automatically removed after a while.\n\nExamples:\n/remove_solve_kick_msg yes\n/remove_solve_kick_msg no",
+        "Configura si els missatges de resposta al captcha i d'expulsió s'han eliminar al cap d'una estona.\n\nExemples:\n/remove_solve_kick_msg yes\n/remove_solve_kick_msg no",
 
     "RM_SOLVE_KICK_MSG_YES":
-        "Configuration change, solve and kick/ban messages will be automatically removed after a while.",
+        "Configuració canviada, els missatges de resposta al captcha i d'expulsió seran eliminats al cap d'una estona.",
 
     "RM_SOLVE_KICK_MSG_NO":
-        "Configuration change, solve and kick/ban messages won't be removed.",
+        "Configuració canviada, els missatges de resposta al captcha i d'expulsió no seran eliminats.",
 
     "RM_WELCOME_MSG":
-        "Configure if welcome messages should be automatically removed after a while.\n\nExamples:\n/remove_welcome_msg yes\n/remove_welcome_msg no",
+        "Configura si els missatges de benvinguda han de ser eliminats al cap d'una estona.\n\nExemples:\n/remove_welcome_msg yes\n/remove_welcome_msg no",
 
     "RM_WELCOME_MSG_YES":
-        "Configuration change, welcome messages will be automatically removed after a while.",
+        "Configuració canviada, els missatges de benvinguda seran eliminats al cap d'una estona.",
 
     "RM_WELCOME_MSG_NO":
-        "Configuration change, welcome messages won't be removed.",
+        "Configuració canviada, els missatges de benviguda no seran eliminats.",
 
     "OTHER_CAPTCHA_BTN_TEXT":
         "Mostra un altre captcha",
@@ -186,19 +186,19 @@
         "No sóc un Bot",
 
     "URL_MSG_NOT_ALLOWED_DETECTED":
-        "Detected and removed a message that contains an URL/link send by {}.\n\nThis group doesn't allows URLs in messages (An Admin needs to config Bot to allow URLs in messages).",
+        "Detectat i eliminat un missatge que conté una URL/enllaç enviat per {}.\n\nAquest grup no permet URLs als missatges (només els administradors poden configurar el Bot per metre URLs als missatges).",
 
     "URL_ENABLE":
-        "Ok, now users can send URLs and links in this group. Deny them to send URLs again with /url_disable command.",
+        "D'acord, ara els usuaris poden enviar URLs i enllaços a aquest grup. Podeu prohibir-ho una altra vegada amb l'ordre /url_disable ",
 
     "URL_DISABLE":
-        "Ok, now users are not allowed to send URLs and links in this group. Allow them to send URLs again with /url_enable command.",
+        "D'acord, ara els usuaris no poden enviar URLs i enllaços a aquest grup. Ho podeu permetre una altra vegada amb l'ordre /url_enable ",
 
     "CONFIG_ALREADY_SET":
-        "This configuration is already set/enabled.",
+        "Aquesta configuració ja està activada.",
 
     "CONFIG_ALREADY_UNSET":
-        "This configuration is already unset/disabled.",
+        "Aquesta configuració ja està desactivada.",
 
     "ENABLE":
         "S'ha activat la protecció per captcha. Podeu desactivar-la amb l'ordre /disable.",
@@ -213,7 +213,7 @@
         "La protecció per captcha ja està desactivada.",
 
     "CAN_NOT_GET_ADMINS":
-        "No es pot utilitzar aquesta ordre en el xat actual.",
+        "No es pot utilitzar aquesta ordre al xat actual.",
 
     "VERSION":
         "La versió actual del bot és:\n{}",
@@ -222,22 +222,22 @@
         "Aquest és un bot de programari lliure i codi obert (open-source) amb llicència GNU-GPL, desenvolupat per {}\n\nPodeu consultar el codi font aquí:\n{}\n\nUs agrada el que faig? Convideu-me a un cafè:\n{}",
 
     "POLL_NEW_USER":
-        "Hello {}, welcome to {}. Please solve the poll below to prove that you are not a robot. If you don't do this in {}, you will be automatically kicked out of the group.",
+        "Hola {}, benvingut/da a {}. Si us plau, resolt l'enquesta per demostrar que no ets un Bot. Si no ho fas en {}, automàticament seràs expulsat del grup.",
 
     "CAPTCHA_POLL_FAIL":
-        "Captcha poll fail, {} select a wrong answer. You will be kicked in 10s, please try to join the group again...",
+        "La resolució del captcha ha fallat, {} ha seleccionat una resposta incorrecte. Seràs expulsat en 10s. Pots tornar a intentar entrar al grup...",
 
     "CAPTCHA_POLL_USAGE":
-        "Configure Captcha Poll Question and options\n————————————————\nQuestion text can't be larger than {} characters.\n\nOption text can't be larger than {} characters.\n\nMaximum number of options are {}.\n————————————————\nSet Poll Question:\n/captcha_poll question Are you sure that you want to enter to this group?\n\nSet Poll Option 1:\n/captcha_poll option 1 Nope, I don't want to enter the group.\n\nSet Poll Option 2:\n/captcha_poll option 2 Sure, I'm a human and want to enter the group.\n\nSet Poll Option 3:\n/captcha_poll option 3 Who I am and what am I doing?\n\nRemove Poll Option 2:\n/captcha_poll option 2 remove\n\nSet Correct Poll Option 2:\n/captcha_poll correct_option 2\n\nChange Captcha to Poll Mode:\n/captcha_mode poll",
+        "Configura la pregunta i opcions de l'enquesta Captcha\n————————————————\nEl text de la pregunta no pot excedir els {} caràcters.\n\nLes opcions no poden excedir els {} caràcters.\n\nEl nombre màxim d'opcions són {}.\n————————————————\nFixa la pregunta de l'enquesta:\n/captcha_poll question Segur que vols entrar a aquest grup?\n\nSet Poll Option 1:\n/captcha_poll opció 1 No, no vull entrar-hi.\n\nSet Poll Option 2:\n/captcha_poll opció 2 Sí, sóc humà i vull entrar al grup.\n\nSet Poll Option 3:\n/captcha_poll opció 3 Qui soc i què estic fent??\n\nRemove Poll Option 2:\n/captcha_poll opció 2 eliminada\n\nFixa la resposta correcte a la 2a opció:\n/captcha_poll correct_option 2\n\nCanvia el Captcha a tipus enquesta:\n/captcha_mode poll",
 
     "POLL_QUESTION_CONFIGURED":
-        "Captcha Poll Question successfully configured.",
+        "La pregunta de l'enquesta captcha ha estat configurada correctament.",
 
     "POLL_OPTION_CONFIGURED":
-        "Captcha Poll Option {} successfully configured.",
+        "La resposta {} de l'enquesta captcha ha estat configurada correctament.",
 
     "POLL_CORRECT_OPTION_CONFIGURED":
-        "Captcha Poll Correct Option successfully configured to option number {}.",
+        "La resposta correcte de l'enquesta captcha ha estat configurada a l'opció {}.",
 
     "POLL_CORRECT_OPTION_NOT_CONFIGURED":
         "Poll option number {} doesn't exists, please configure the option first.\n\nExample:\n/captcha_poll question Is 1+2 equal to 5?\n\n/captcha_poll option 1 Yes\n\n/captcha_poll option 2 No\n\n/captcha_poll correct_option 2\n\n/captcha_mode poll",
@@ -246,38 +246,38 @@
         "A new user has come, but Captcha Poll is not totally configured.\n\nPoll question, Poll correct answer and minimum 2 answer options needs to be configured. Please, configure it with /captcha_poll command.\n\nExample:\n/captcha_poll question Is 1+2 equal to 5?\n\n/captcha_poll option 1 Yes\n\n/captcha_poll option 2 No\n\n/captcha_poll correct_option 2\n\n/captcha_mode poll",
 
     "CONNECT_USAGE":
-        "You need to specify the group chat ID that you want to configure (use /chatid command inside the group to know it).\n\nExample:\n/connect -1234567890",
+        "Heu d'especificar el chat ID del grup que voleu configurar (utilitza la ordre /chatid dins del grup per saber-lo).\n\nExemple:\n/connect -1234567890",
 
     "CONNECT_JUST_ADMIN":
-        "Just an Admin of that group can configure it.",
+        "Només els administradors d'aquest grup poden configurar-lo.",
 
     "CONNECT_OK":
-        "Connected to group {}. Now you can configure group captcha settings from private.",
+        "Connectat al grup {}. Ja pots configurar les opcions de captcha des del xat privat.",
 
     "DISCONNECT_NOT_CONNECTED":
-        "You are not connected.",
+        "No estic connectat.",
 
     "DISCONNECT_OK":
-        "Disconnected from group {}.",
+        "Desconnectat del grup {}.",
 
     "INVALID_GROUP_ID":
-        "Invalid group chat ID.",
+        "Chat ID no vàlid.",
 
     "CHECK_CFG":
-        "Group Configuration:\n————————————————\n```\n{}\n```",
+        "Configuració del grup:\n————————————————\n```\n{}\n```",
 
     "CMD_NOT_ALLOW_PRIVATE":
-        "This command cannot be used in private chat.",
+        "Aquesta ordre no es pot utilitzar al xat privat.",
 
     "CMD_NEEDS_CONNECTION":
-        "This command cannot be used in private chat unless you make a connection (/connect) to configure some group.",
+        "Aquesta ordre no es pot utilitzar al xat privat fins que no us connecteu a un grup per configurar-lo (/connect).",
 
     "CMD_JUST_IN_PRIVATE":
-        "This command can't be used inside a group (use it in private Bot chat).",
+        "Aquesta ordre no es pot utilitzar a un grup (s'ha d'utilitzat al xat privat amb el Bot).",
 
     "RM_ALL_MSGS_AFTER_KICK_ON":
-        "Configuration changed, all messages sent by users that didn't solve the captcha will be removed.",
+        "La configuració ha canviat, tots els missatges enviats per usuaris que no han resolt el captcha seran eliminats.",
 
     "RM_ALL_MSGS_AFTER_KICK_OFF":
-        "Configuration changed, messages sent by users that didn't solve the captcha won't be removed."
+        "La configuració ha canviat, tots els missatges enviats per usuaris que no han resolt el captcha NO seran eliminats"
 }
